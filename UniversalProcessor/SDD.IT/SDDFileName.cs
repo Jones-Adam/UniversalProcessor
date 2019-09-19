@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UniversalProcessor.SDD.Computer
+namespace UniversalProcessor.SDD.IT
 {
     public class SDDFileName : SDDDataViewDefinition
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-using UniversalProcessor.SDD.Computer;
+using UniversalProcessor.SDD.IT;
 
 namespace UniversalProcessor.Processors
 {

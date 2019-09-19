@@ -6,15 +6,19 @@ namespace UniversalProcessor.SDD.Common
 {
     public class SDDInteger : SDDDataViewDefinition
     {
-        private readonly int value;
+        protected readonly int value;
 
-        public SDDInteger() : base(CommonDefinitions.SDDInteger)
+        public SDDInteger(Guid Identifer) : base(Identifer)
         {
-            value = 0;
-           
+            value = 0;          
         }
 
-        public SDDInteger(int initValue) : this()
+        public SDDInteger(int initValue) : this(CommonDefinitions.SDDInteger)
+        {
+            value = initValue;
+        }
+
+        public SDDInteger(Guid Identifier, int initValue) : this(Identifier)
         {
             value = initValue;
         }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UniversalProcessor.SDD.Common
 {
-    public class SDDString : SDDDataViewDefinition
+    public class SDDWord : SDDDataViewDefinition
     {
         private const int ID_WHOLESTRING_LENGTH = 0;
 
@@ -12,14 +12,14 @@ namespace UniversalProcessor.SDD.Common
 
         private readonly string value;
 
-        public SDDString() : base(CommonDefinitions.SDDString)
+        public SDDWord() : base(CommonDefinitions.SDDWord)
         {
             value = "";
             this.Calculators.Add(FUNC_GetLength, (SSDCalculateSingle)(() => { return ProcessorAPI.Describe(value.Length); }));
             this.Add(ID_WHOLESTRING_LENGTH, "Length", CommonDefinitions.SDDInteger, FUNC_GetLength);
         }
 
-        public SDDString(string initValue) : this()
+        public SDDWord(string initValue) : this()
         {
             value = initValue;
         }
