@@ -1,7 +1,7 @@
 # UniversalProcessor
 A universal data processor
 
-The idea with this library component is to be able to provide it any piece of data and be able to explore that piece of data. I find that very often when dealing with a new piece of packaged information, be it a file format, a database, a zipfile with stuff in it, the first step is unpacking it into some kind of data structure. This unpacking work is unique per piece of information but the process that is followed is very similar for every case.
+The idea with this (.net standard 2.0) library component is to be able to provide it any piece of data and be able to explore that piece of data. I find that very often when dealing with a new piece of packaged information, be it a file format, a database, a zipfile with stuff in it, the first step is unpacking it into some kind of data structure. This unpacking work is unique per piece of information but the process that is followed is very similar for every case.
 
 It usually begins with manually exploring the data, followed by writing some scripts or code to either ingest the data directly or to transform it into something that can be injested.  Sometimes it needs to be injested and processed in an optimal way, othertimes it is not important.
 
